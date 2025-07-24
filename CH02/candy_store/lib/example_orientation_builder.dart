@@ -5,6 +5,7 @@ void main() {
     MaterialApp(
       home: Scaffold(
         body: OrientationBuilder(
+          //OrientationBuilder provided with device's Orientation
           builder: (BuildContext context, Orientation orientation) {
             if (orientation == Orientation.portrait) {
               return const PortraitLayout();

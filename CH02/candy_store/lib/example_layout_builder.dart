@@ -5,6 +5,7 @@ void main() {
     MaterialApp(
       home: Scaffold(
         body: LayoutBuilder(
+          //LayoutBuilder provided with Constraints
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth > 600) {
               return const DesktopLayout();

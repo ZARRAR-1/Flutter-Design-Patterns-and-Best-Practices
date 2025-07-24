@@ -19,6 +19,7 @@ class ResponsiveLayoutExample extends StatelessWidget {
 
     return GridView.count(
       crossAxisCount: _getCrossAxisCount(screenSize.width),
+      //Generating all the containers at once due to their limited numbers
       children: List.generate(
         12,
         (index) => Container(
